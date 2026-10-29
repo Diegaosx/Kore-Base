@@ -1,0 +1,403 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "name": "Rafael Araujo",
+      "email": "admin@kore.dev",
+      "passwordHash": "scrypt$285aab9dbb61d474cbb7148937ac048d$ee68601af93948b92b6858c0bcbcd592d3270b23758e837459168f2082f9739ee9f8b06938a7d537b9d39b4436a5979df1abccaa966bf5072144d850c4a0d57b",
+      "role": "admin",
+      "status": "active",
+      "locale": "pt-BR",
+      "department": "Platform Architecture",
+      "lastLoginAt": "2026-10-29T04:38:14.456Z",
+      "createdAt": "2026-10-01T04:36:56.920Z",
+      "updatedAt": "2026-10-29T04:36:56.920Z"
+    },
+    {
+      "id": "usr_client_01",
+      "name": "Beatriz Monteiro",
+      "email": "cliente@kore.dev",
+      "passwordHash": "scrypt$77aa7c06521a97f30f6990eab6754217$ca808a184428e2703cab14b381d9010e9d3cf229e9fbf6212261626a6f45b7636b78a84d74bd9ef140aab3022b922cd3a63c876f8b9e15a9c6e73901e6a0f819",
+      "role": "client",
+      "status": "active",
+      "locale": "pt-BR",
+      "department": "Operations",
+      "lastLoginAt": "2026-10-29T02:36:56.920Z",
+      "createdAt": "2026-10-05T04:36:56.920Z",
+      "updatedAt": "2026-10-29T04:36:56.920Z"
+    },
+    {
+      "id": "usr_client_02",
+      "name": "Carlos Méndez",
+      "email": "carlos.mendez@kore.dev",
+      "passwordHash": "scrypt$673f21c01bb7918ce563c8f01454fc8a$f7c10e7757e367797bd5f5fa510f3512614c88a91d8c8aad8f4839fadca8e0ba278c58deb02e432701a139e954ca8b5c4bee4581e67a39d86b618aa7cde56ca6",
+      "role": "client",
+      "status": "active",
+      "locale": "es",
+      "department": "Finance",
+      "lastLoginAt": "2026-10-28T14:36:56.920Z",
+      "createdAt": "2026-10-10T04:36:56.920Z",
+      "updatedAt": "2026-10-29T04:36:56.920Z"
+    },
+    {
+      "id": "usr_admin_02",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@kore.dev",
+      "passwordHash": "scrypt$6a3e8ba2fbea62bcd3d7095d2000fe02$f464ec88d5730db15ff7e1f0c85e7e442bdc542a2735a90e754206bfe92cedfd6fcedddca75ac721702b9eccacd8383481c2007235cf1987732ca6f78ba3e131",
+      "role": "admin",
+      "status": "active",
+      "locale": "en",
+      "department": "Security & Compliance",
+      "lastLoginAt": "2026-10-28T22:36:56.920Z",
+      "createdAt": "2026-10-14T04:36:56.920Z",
+      "updatedAt": "2026-10-29T04:36:56.920Z"
+    },
+    {
+      "id": "usr_client_03",
+      "name": "Lucas Ferreira",
+      "email": "lucas.ferreira@kore.dev",
+      "passwordHash": "scrypt$fc0f2150005f2500e29d73b9c2021da7$167bbbd803f1d0f3dfa6845a51a6daf43b3bc3bcf3eb2cdd10f35add6cded5f43061602c576a9a5eec7897f14d1b54676ad1bd391b7a11b53a3d1b4b961053c0",
+      "role": "client",
+      "status": "suspended",
+      "locale": "pt-BR",
+      "department": "External Partner",
+      "lastLoginAt": "2026-10-22T04:36:56.920Z",
+      "createdAt": "2026-10-17T04:36:56.920Z",
+      "updatedAt": "2026-10-29T04:36:56.920Z"
+    }
+  ],
+  "passwordResets": [],
+  "auditLogs": [
+    {
+      "id": "log_deeaa5cfdea8",
+      "timestamp": "2026-10-29T04:38:14.985Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "LLM_INFERENCE_GEMINI",
+      "category": "llm",
+      "resource": "/api/infra/llm/execute",
+      "status": "success",
+      "ipAddress": "127.0.0.1",
+      "latencyMs": 284,
+      "metadata": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "liveApiUsed": false
+      }
+    },
+    {
+      "id": "log_4b7a5b1091ae",
+      "timestamp": "2026-10-29T04:38:14.613Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "BULLMQ_JOB_ENQUEUED",
+      "category": "queue",
+      "resource": "kore_queue:audit-sync",
+      "status": "success",
+      "ipAddress": "127.0.0.1",
+      "latencyMs": 0,
+      "metadata": {
+        "jobId": "job_4a8be486",
+        "jobName": "sync-metrics-snapshot"
+      }
+    },
+    {
+      "id": "log_53fb9f5636f1",
+      "timestamp": "2026-10-29T04:38:14.457Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "category": "auth",
+      "resource": "/api/auth/login",
+      "status": "success",
+      "ipAddress": "127.0.0.1",
+      "latencyMs": 53,
+      "metadata": {
+        "role": "admin"
+      }
+    },
+    {
+      "id": "log_seed_01",
+      "timestamp": "2026-10-29T03:51:56.920Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "SYSTEM_BOOT_CHECKS",
+      "category": "security",
+      "resource": "/api/infra/status",
+      "status": "success",
+      "ipAddress": "10.24.0.1",
+      "latencyMs": 2,
+      "metadata": {
+        "jwtAlg": "HS256",
+        "rateLimit": "active",
+        "postgresSchema": "verified"
+      }
+    },
+    {
+      "id": "log_seed_02",
+      "timestamp": "2026-10-29T04:04:56.920Z",
+      "actorId": "usr_admin_02",
+      "actorEmail": "elena.rostova@kore.dev",
+      "actorRole": "admin",
+      "action": "USER_STATUS_SUSPENDED",
+      "category": "users",
+      "resource": "/api/users/usr_client_03",
+      "status": "warning",
+      "ipAddress": "10.24.0.14",
+      "latencyMs": 6,
+      "metadata": {
+        "targetEmail": "lucas.ferreira@kore.dev",
+        "status": "suspended"
+      }
+    },
+    {
+      "id": "log_seed_03",
+      "timestamp": "2026-10-29T04:18:56.920Z",
+      "actorId": "usr_client_01",
+      "actorEmail": "cliente@kore.dev",
+      "actorRole": "client",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "category": "auth",
+      "resource": "/api/auth/login",
+      "status": "success",
+      "ipAddress": "192.168.1.40",
+      "latencyMs": 14,
+      "metadata": {
+        "locale": "pt-BR"
+      }
+    },
+    {
+      "id": "log_seed_04",
+      "timestamp": "2026-10-29T04:27:56.920Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "BULLMQ_WORKER_REGISTERED",
+      "category": "queue",
+      "resource": "kore_queue:email-dispatch",
+      "status": "success",
+      "ipAddress": "10.24.0.1",
+      "latencyMs": 3,
+      "metadata": {
+        "queues": 4,
+        "concurrency": 5
+      }
+    }
+  ],
+  "metricsDaily": [
+    {
+      "date": "2026-09-30",
+      "label": "30/09",
+      "usersCount": 1,
+      "loginsCount": 18,
+      "actionsCount": 64
+    },
+    {
+      "date": "2026-10-01",
+      "label": "01/10",
+      "usersCount": 1,
+      "loginsCount": 22,
+      "actionsCount": 77
+    },
+    {
+      "date": "2026-10-02",
+      "label": "02/10",
+      "usersCount": 1,
+      "loginsCount": 25,
+      "actionsCount": 88
+    },
+    {
+      "date": "2026-10-03",
+      "label": "03/10",
+      "usersCount": 1,
+      "loginsCount": 28,
+      "actionsCount": 96
+    },
+    {
+      "date": "2026-10-04",
+      "label": "04/10",
+      "usersCount": 1,
+      "loginsCount": 29,
+      "actionsCount": 101
+    },
+    {
+      "date": "2026-10-05",
+      "label": "05/10",
+      "usersCount": 1,
+      "loginsCount": 30,
+      "actionsCount": 102
+    },
+    {
+      "date": "2026-10-06",
+      "label": "06/10",
+      "usersCount": 2,
+      "loginsCount": 29,
+      "actionsCount": 100
+    },
+    {
+      "date": "2026-10-07",
+      "label": "07/10",
+      "usersCount": 2,
+      "loginsCount": 28,
+      "actionsCount": 97
+    },
+    {
+      "date": "2026-10-08",
+      "label": "08/10",
+      "usersCount": 2,
+      "loginsCount": 27,
+      "actionsCount": 94
+    },
+    {
+      "date": "2026-10-09",
+      "label": "09/10",
+      "usersCount": 2,
+      "loginsCount": 26,
+      "actionsCount": 93
+    },
+    {
+      "date": "2026-10-10",
+      "label": "10/10",
+      "usersCount": 2,
+      "loginsCount": 26,
+      "actionsCount": 94
+    },
+    {
+      "date": "2026-10-11",
+      "label": "11/10",
+      "usersCount": 2,
+      "loginsCount": 28,
+      "actionsCount": 99
+    },
+    {
+      "date": "2026-10-12",
+      "label": "12/10",
+      "usersCount": 3,
+      "loginsCount": 30,
+      "actionsCount": 108
+    },
+    {
+      "date": "2026-10-13",
+      "label": "13/10",
+      "usersCount": 3,
+      "loginsCount": 34,
+      "actionsCount": 119
+    },
+    {
+      "date": "2026-10-14",
+      "label": "14/10",
+      "usersCount": 3,
+      "loginsCount": 38,
+      "actionsCount": 132
+    },
+    {
+      "date": "2026-10-15",
+      "label": "15/10",
+      "usersCount": 3,
+      "loginsCount": 42,
+      "actionsCount": 144
+    },
+    {
+      "date": "2026-10-16",
+      "label": "16/10",
+      "usersCount": 3,
+      "loginsCount": 45,
+      "actionsCount": 155
+    },
+    {
+      "date": "2026-10-17",
+      "label": "17/10",
+      "usersCount": 3,
+      "loginsCount": 48,
+      "actionsCount": 163
+    },
+    {
+      "date": "2026-10-18",
+      "label": "18/10",
+      "usersCount": 4,
+      "loginsCount": 49,
+      "actionsCount": 168
+    },
+    {
+      "date": "2026-10-19",
+      "label": "19/10",
+      "usersCount": 4,
+      "loginsCount": 49,
+      "actionsCount": 169
+    },
+    {
+      "date": "2026-10-20",
+      "label": "20/10",
+      "usersCount": 4,
+      "loginsCount": 48,
+      "actionsCount": 167
+    },
+    {
+      "date": "2026-10-21",
+      "label": "21/10",
+      "usersCount": 4,
+      "loginsCount": 47,
+      "actionsCount": 164
+    },
+    {
+      "date": "2026-10-22",
+      "label": "22/10",
+      "usersCount": 4,
+      "loginsCount": 46,
+      "actionsCount": 161
+    },
+    {
+      "date": "2026-10-23",
+      "label": "23/10",
+      "usersCount": 4,
+      "loginsCount": 45,
+      "actionsCount": 160
+    },
+    {
+      "date": "2026-10-24",
+      "label": "24/10",
+      "usersCount": 5,
+      "loginsCount": 46,
+      "actionsCount": 162
+    },
+    {
+      "date": "2026-10-25",
+      "label": "25/10",
+      "usersCount": 5,
+      "loginsCount": 47,
+      "actionsCount": 167
+    },
+    {
+      "date": "2026-10-26",
+      "label": "26/10",
+      "usersCount": 5,
+      "loginsCount": 50,
+      "actionsCount": 175
+    },
+    {
+      "date": "2026-10-27",
+      "label": "27/10",
+      "usersCount": 5,
+      "loginsCount": 53,
+      "actionsCount": 186
+    },
+    {
+      "date": "2026-10-28",
+      "label": "28/10",
+      "usersCount": 5,
+      "loginsCount": 57,
+      "actionsCount": 199
+    },
+    {
+      "date": "2026-10-29",
+      "label": "29/10",
+      "usersCount": 5,
+      "loginsCount": 62,
+      "actionsCount": 215
+    }
+  ]
+}

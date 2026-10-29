@@ -1,0 +1,6 @@
+{
+  "name": "Kore Base Platform",
+  "description": "Enterprise full-stack starter architecture with RBAC, multi-language support, hardened security, optional Redis/BullMQ queues, multi-LLM gateway, and audit logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
