@@ -9,7 +9,7 @@
       "status": "active",
       "locale": "pt-BR",
       "department": "Platform Architecture",
-      "lastLoginAt": "2026-10-29T04:38:14.456Z",
+      "lastLoginAt": "2026-10-29T04:51:13.258Z",
       "createdAt": "2026-10-01T04:36:56.920Z",
       "updatedAt": "2026-10-29T04:36:56.920Z"
     },
@@ -22,7 +22,7 @@
       "status": "active",
       "locale": "pt-BR",
       "department": "Operations",
-      "lastLoginAt": "2026-10-29T02:36:56.920Z",
+      "lastLoginAt": "2026-10-29T04:49:16.105Z",
       "createdAt": "2026-10-05T04:36:56.920Z",
       "updatedAt": "2026-10-29T04:36:56.920Z"
     },
@@ -68,6 +68,38 @@
   ],
   "passwordResets": [],
   "auditLogs": [
+    {
+      "id": "log_60922a0e8d5b",
+      "timestamp": "2026-10-29T04:51:13.260Z",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@kore.dev",
+      "actorRole": "admin",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "category": "auth",
+      "resource": "/api/auth/login",
+      "status": "success",
+      "ipAddress": "127.0.0.1",
+      "latencyMs": 82,
+      "metadata": {
+        "role": "admin"
+      }
+    },
+    {
+      "id": "log_aaa37e569e74",
+      "timestamp": "2026-10-29T04:49:16.107Z",
+      "actorId": "usr_client_01",
+      "actorEmail": "cliente@kore.dev",
+      "actorRole": "client",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "category": "auth",
+      "resource": "/api/auth/login",
+      "status": "success",
+      "ipAddress": "2804:29b8:509f:9c5e:104b:2475:4472:ca70",
+      "latencyMs": 81,
+      "metadata": {
+        "role": "client"
+      }
+    },
     {
       "id": "log_deeaa5cfdea8",
       "timestamp": "2026-10-29T04:38:14.985Z",
@@ -396,8 +428,8 @@
       "date": "2026-10-29",
       "label": "29/10",
       "usersCount": 5,
-      "loginsCount": 62,
-      "actionsCount": 215
+      "loginsCount": 64,
+      "actionsCount": 217
     }
   ]
 }
